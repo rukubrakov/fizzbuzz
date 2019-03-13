@@ -1,4 +1,4 @@
 1 4 7
 1 4 7
 000000 -23423432432 345 -85
-fizzbuzz -23423432432 fizz  buz
+fizzbuzz -23423432432 fizzbuzz  buzz
