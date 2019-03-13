@@ -1,18 +1,20 @@
 #!/usr/bin/python3
 
 import unittest
-from fizzbuzz import replace
+from fizzbuzz import *
 
 class TestFizzbuzz(unittest.TestCase):
 	def test_fizzbuzz(self):
-		nums, A = [], []
+		B, A = [], []
+		i = 0
 		with open('tests.txt') as file:
 			for line in file:
-				nums.append(int(line[:line.find(' ')]))
-				A.append(list(line[line.find(' ') + 1:]))
-		for i in range(len(nums)):
-			f = replace(nums[i])
-			self.assertEqual(f, A[i])
+				A.append(line)
+				B.append(line)
+				++i
+		for e in range(i):
+			f = fizz(A[e])
+			self.assertEqual(f, B[e])
 
 if __name__=="__main__":
 	unittest.main()
