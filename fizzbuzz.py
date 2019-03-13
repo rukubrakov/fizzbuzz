@@ -88,6 +88,6 @@ def fizz(stroka):
             res = res + 'fizzbuzz'
         if (i<(len(mass))):
             res += ' '
-        else:
-            res += '\n'
+       # else:
+           # res += '\n'
     return res
