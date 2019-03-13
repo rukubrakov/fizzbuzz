@@ -11,7 +11,7 @@ class TestFizzbuzz(unittest.TestCase):
 			for line in file:
 				A.append(line)
 				B.append(line)
-				++i
+				i = i + 1
 		for e in range(i):
 			f = fizz(A[e])
 			self.assertEqual(f, B[e])
