@@ -9,8 +9,10 @@ class TestFizzbuzz(unittest.TestCase):
 		i = 0
 		with open('tests.txt') as file:
 			for line in file:
-				A.append(line)
-				B.append(line)
+				if i % 2 == 0:
+					A.append(line)
+				else:
+					B.append(line)
 				i = i + 1
 		for e in range(i):
 			f = fizz(A[e])
