@@ -86,7 +86,7 @@ def fizz(stroka):
             res = res + 'buzz'
         if k == 3:
             res = res + 'fizzbuzz'
-        if (i<range(len(mass))):
+        if (i<(len(mass))):
             res += ' '
         else:
             res += '\n'
