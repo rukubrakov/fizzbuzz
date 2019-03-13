@@ -14,7 +14,7 @@ class TestFizzbuzz(unittest.TestCase):
 				else:
 					B.append(line)
 				i = i + 1
-		for e in range(i):
+		for e in range(i/2):
 			f = fizz(A[e])
 			self.assertEqual(f, B[e])
 
